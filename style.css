@@ -44,6 +44,10 @@ body {
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  transition: 0.5s ease;
+}
+.logo img:hover {
+  transform: scale(1.1);
 }
 .navebar {
   font-size: 1.7rem;
@@ -94,13 +98,18 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 85px;
+  margin-bottom: 130px;
 }
 .home-img img {
   width: 30vw;
   border-radius: 50%;
-
+  transition: 0.5s ease;
   margin-right: 10px;
+  background-position: 100%;
+  padding-left: 15px;
+}
+.home-img img:hover {
+  transform: scale(1.1);
 }
 .home_content h3 {
   font-size: 3.2rem;
@@ -207,20 +216,17 @@ span {
   border-color: var(--main-color);
   transform: scale(1.02);
 }
-.Portfolio{
+.Portfolio {
   background: var(--second-bg-color);
-
 }
-.portfolio h2{
- margin-bottom: 4rem;
-
+.portfolio h2 {
+  margin-bottom: 4rem;
 }
-.portfoli-container{
+.portfoli-container {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 2.5rem;
-
 }
 .portfoli-container .portfolio-box {
   position: relative;
@@ -229,22 +235,53 @@ span {
   overflow: hidden;
   display: flex;
 }
-.portfolio-box .portfolyo-layer{
+.portfolio-box .portfolyo-layer {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color) );
+  background: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 4rem;
+  transform: translateY(100%);
+  transition: 0.5s ease;
 }
-.portfolio-box img{
+.portfolio-box:hover .portfolyo-layer {
+  transform: translateY(0);
+}
+.portfolio-box img {
   width: 600px;
-
+  transition: 0.5s ease;
 }
-.portfolio-box a img{
+.portfolio-box:hover img {
+  transform: scale(1.1);
+}
+.portfolio-box a img {
   width: 25px;
   border-radius: 25%;
 }
-.portfolyo-layer h4{
-  font-size: 20px;
+.portfolyo-layer h4 {
+  font-size: 3rem;
+}
+.portfolyo-layer p {
+  font-size: 1.6rem;
+  margin: 0.3rem 0 1rem;
+}
+.portfolyo-layer a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  background: var(--text-color);
+  border-radius: 50%;
+}
+.portfolyo-layer a img {
+  font-size: 2rem;
+  color: var(--second-bg-color);
 }
