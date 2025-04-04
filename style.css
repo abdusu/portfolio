@@ -285,3 +285,27 @@ span {
   font-size: 2rem;
   color: var(--second-bg-color);
 }
+
+/* .contact{
+  height: 600px;
+  width: 100%;
+  align-content: center;
+  text-align: center;
+  align-items: center;
+  position: relative;
+}
+.info{
+  height: 400px;
+  width: 500px;
+  background: var(--main-color);
+  border-radius: 25px;
+  align-content: center;
+}
+.info input{
+  align-items: center;
+  border-radius: 25px;
+  align-content: center;
+  text-align: center; 
+  margin-left: 25px; 
+  margin-top: 50px;
+} */
